@@ -9,8 +9,9 @@ body{
     background-color: rgb(250, 250, 250);
 }
 
-/* Typography */
 
+
+/* Typography */
 h1{
     font-size: 4rem;
     color: rgb(20, 20, 20);
@@ -35,6 +36,8 @@ a{
 a:hover{
     color: rgb(20, 20, 20);
 }
+
+
 
 /* Header */
 header{
@@ -206,8 +209,9 @@ footer{
     color: rgb(62, 82, 163); 
 }
 
-/* Responsive */
 
+
+/* Responsive */
 @media screen and (max-width: 400px) {
 h1{
     font-size: 2rem;
@@ -246,6 +250,28 @@ header, section{
     position: absolute;
     top: 20px;
     right: 20px;
+}
+li{
+    padding: 10px;
+}
+.dropdown-content-mobile{
+    display: none;
+    /* border: solid 1px #000; */
+    padding: 10px;
+}
+.dropdown-content-mobile li a{
+    font-size: 18px;
+}
+.dropdown-content-mobile-1 li{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.li-1-div-mobile:hover .dropdown-content-mobile{
+    display: block;
+}
+.li-2-div-mobile:hover .dropdown-content-mobile{
+    display: block;
 }
 .div-btn{
     display: flex;
