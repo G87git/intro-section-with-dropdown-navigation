@@ -5,18 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+
   </style>
 </head>
 <body>
 
-  Features
+  <!-- Features
   Company
   Careers
   About
@@ -29,11 +28,156 @@
   Get your team in sync, no matter your location. Streamline processes, 
   create team rituals, and watch productivity soar.
 
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  Learn more -->
+
+
+  <!-- header -->
+  <header>
+    <div class="left-header">
+      <h1>snap</h1>
+    <nav>
+      <ul>
+        <div class="li-1-div">
+          <li class="dropdown-li li-1">
+          <a href="#">Features</a>
+          <span>
+            <img src="/intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg" alt="dropdown">
+          </span>
+        </li>
+          <div class="dropdown-content dropdown-content-1">
+            <li><span><img src="/intro-section-with-dropdown-navigation-main/images/icon-todo.svg" alt="todo-img"></span><a href="#">Todo List</a></li>
+            <li><span><img src="/intro-section-with-dropdown-navigation-main/images/icon-calendar.svg" alt="calendar-img"></span><a href="#">Calendar</a></li>
+            <li><span><img src="/intro-section-with-dropdown-navigation-main/images/icon-reminders.svg" alt="reminder-img"></span><a href="#">Reminders</a></li>
+            <li><span><img src="/intro-section-with-dropdown-navigation-main/images/icon-planning.svg" alt="planning-img"></span><a href="#">Planning</a></li>
+          </div>
+        </div>
+        <div class="li-2-div">
+          <li class="dropdown-li li-2">
+            <a href="#">Company</a>
+            <span>
+              <img src="/intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg" alt="dropdown">
+            </span>
+          </li>
+          <div class="dropdown-content dropdown-content-2">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </div>
+        </div>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About</a> </li>
+      </ul>
+    </nav>
+    </div>
+    <div class="div-btn">
+      <button class="btn-1">Login</button>
+      <button class="btn-2">Register</button>
+    </div>
+  </header>
+
+  <!-- Mobile View Header -->
+  <header class="mobile-header">
+    <div class="siderNav" id="mySiderMobileNav">
+      <a href="javascript:void(0)" class="closeSliderBtn" onclick="closeSiderNav();"><img src="/intro-section-with-dropdown-navigation-main/images/icon-close-menu.svg" alt="time"></a>
+      <div class="li-1-div">
+          <li class="dropdown-li li-1">
+          <a href="#">Features</a>
+          <span>
+            <img src="/intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg" alt="dropdown">
+          </span>
+        </li>
+          <div class="dropdown-content dropdown-content-1">
+            <li><span><img src="/intro-section-with-dropdown-navigation-main/images/icon-todo.svg" alt="todo-img"></span><a href="#">Todo List</a></li>
+            <li><span><img src="/intro-section-with-dropdown-navigation-main/images/icon-calendar.svg" alt="calendar-img"></span><a href="#">Calendar</a></li>
+            <li><span><img src="/intro-section-with-dropdown-navigation-main/images/icon-reminders.svg" alt="reminder-img"></span><a href="#">Reminders</a></li>
+            <li><span><img src="/intro-section-with-dropdown-navigation-main/images/icon-planning.svg" alt="planning-img"></span><a href="#">Planning</a></li>
+          </div>
+        </div>
+        <div class="li-2-div">
+          <li class="dropdown-li li-2">
+            <a href="#">Company</a>
+            <span>
+              <img src="/intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg" alt="dropdown">
+            </span>
+          </li>
+          <div class="dropdown-content dropdown-content-2">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </div>
+        </div>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About</a> </li>
+        <div class="div-btn">
+          <button class="btn-1">Login</button>
+          <button class="btn-2">Register</button>
+        </div>
+    </div>
+      <h1>snap</h1>
+      <span class="menu-logo" onclick="openSiderNav();">
+        <img src="/intro-section-with-dropdown-navigation-main/images/icon-menu.svg" alt="hambuger">
+      </span>
+  </header>
+
+  <!-- section -->
+  <Section>
+    <div class="left-section">
+      <h2>
+          Make <br> remote work
+      </h2>
+      <p>
+        Get your team in sync, no matter your location.   <br>
+        Streamline processes, create team rituals, and  <br>
+        watch productivity soar.
+      </p>
+      <button class="btn-3">
+        Learn More
+      </button>
+      <div class="company-logo">
+        <img src="/intro-section-with-dropdown-navigation-main/images/client-audiophile.svg" alt="audiophine">
+        <img src="/intro-section-with-dropdown-navigation-main/images/client-databiz.svg" alt="databiz">
+        <img src="/intro-section-with-dropdown-navigation-main/images/client-meet.svg" alt="meet">
+        <img src="/intro-section-with-dropdown-navigation-main/images/client-maker.svg" alt="maker">
+      </div>
+    </div>
+    <div class="div-img">
+      <img src="/intro-section-with-dropdown-navigation-main/images/image-hero-desktop.png" alt="Hero-Image" width="500" height="600">
+    </div>
+  </Section>
+
+  <!-- Mobile View Section -->
+  <Section class="mobile-sec">
+    <div class="div-img">
+      <img src="/intro-section-with-dropdown-navigation-main/images/image-hero-mobile.png" alt="Hero-Image"  height="300">
+    </div>
+    <div class="right-mobile-section">
+      <h2>
+          Make remote work
+      </h2>
+      <p>
+        Get your team in sync, no matter your location.
+        Streamline processes, create team rituals, and
+        watch productivity soar.
+      </p>
+      <button class="btn-3">
+        Learn More
+      </button>
+      <div class="company-logo">
+        <img src="/intro-section-with-dropdown-navigation-main/images/client-audiophile.svg" alt="audiophine">
+        <img src="/intro-section-with-dropdown-navigation-main/images/client-databiz.svg" alt="databiz">
+        <img src="/intro-section-with-dropdown-navigation-main/images/client-meet.svg" alt="meet">
+        <img src="/intro-section-with-dropdown-navigation-main/images/client-maker.svg" alt="maker">
+      </div>
+    </div>
+  </Section>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Nzangmene Hassan</a>.
+    </div>
+  </footer>
+
+  <!-- JavaScript Link -->
+  <script src="/intro-section-with-dropdown-navigation-main/script.js"></script>
 </body>
 </html>
